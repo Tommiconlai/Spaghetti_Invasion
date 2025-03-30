@@ -5,7 +5,6 @@ namespace Unity.FPS.Game
 {
     public class GameFlowManager : MonoBehaviour
     {
-        public string initScene = "IntroMenu";
 
 
         [Header("Parameters")] [Tooltip("Duration of the fade-to-black at the end of the game")]
