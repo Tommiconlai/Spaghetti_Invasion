@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PlayerAnimations : MonoBehaviour
 {
-    Animator animator;
+    public Animator animator;
 
     private void Start()
     {
@@ -18,7 +18,7 @@ public class PlayerAnimations : MonoBehaviour
 
     public void RunAnimation()
     {
-        if (Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKey(KeyCode.W))
         {
             animator.SetBool("Running", true);
         }
@@ -38,7 +38,7 @@ public class PlayerAnimations : MonoBehaviour
 
     public void AimAnimation()
     {
-        if (Input.GetMouseButtonDown(2))
+        if (Input.GetMouseButton(1))
         {
             animator.SetBool("Aiming", true);
         }
